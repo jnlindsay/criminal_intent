@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.fragment_container)
 
         if (currentFragment == null) {
-            val fragment = CrimeFragment()
+            val fragment = CrimeListFragment.newInstance()
             /* below: 'fragment transaction', i.e.
                 add, remove, detach, or replace fragment */
             supportFragmentManager
